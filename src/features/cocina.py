@@ -18,12 +18,11 @@ def preparar_salsa_cesar(pimienta_negra_molida):
     salsa = { 
         "sal": "al gusto",
         "zumo de limon":"10 ml",
-        "pimienta_negra": False 
+        "pimienta negra": "No"
     }
 
     if pimienta_negra_molida:
-        salsa["pimienta_negra"] = True
-
+        salsa["pimienta negra"] = "Sí"
     return salsa
 
 
