@@ -15,6 +15,24 @@ def preparar_ensalada_cesar():
 
     return emplatado("ensalada", salsa, "tiras", ingredientes, pasos)
 
+
+def preparar_wrap_cesar():
+    pollo = preparar_pollo_a_la_plancha("tiras")
+    salsa = preparar_salsa_cesar(False)
+
+    ingredientes = ["Tortilla de harina", "Lechuga", "Tomate", pollo ]
+
+    pasos = [
+        "Calentar la tortilla de harina",
+        "Agregar el pollo en tiras",
+        "Añadir la lechuga y el tomate",
+        "Incorporar la salsa cesar",
+        "Enrollar la tortilla"
+    ]
+
+    return emplatado("wrap", salsa, "tiras", ingredientes, pasos)
+
+
 def preparar_sandwich_pollo():
     pollo = preparar_pollo_a_la_plancha("normal")
 
